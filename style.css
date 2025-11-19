@@ -37,3 +37,10 @@ li {
     gap: 10px;
     justify-content: center;
 }
+
+.bt-js{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
