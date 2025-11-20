@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600&display=swap');
+
 body {
-    background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F9F9F9;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     margin-left: 40px;
     margin-right: 40px;
-
+    padding: 20px; 
 }
 
 h1 {
@@ -12,9 +14,11 @@ h1 {
     margin-bottom: 80px;
     margin-top: 80px;
     color: #005A9C;
+    font-family: "montserrat", sans-serif;
 }
 
 .titulo-familia {
+    font-family: "montserrat", sans-serif;
     font-size: 30px;
     color: #6CA0DC;
 }
@@ -22,6 +26,7 @@ h1 {
 .texto-familia {
     font-size: 20px;
     text-decoration: #333333;
+    line-height: 1.6;
 }
 
 li {
@@ -29,21 +34,31 @@ li {
 }
 
 .cartao {
-    background-color: #F4F4F4;
+    background-color: #ffffff;
     padding: 10px;
     margin-bottom: 50px;
     border-radius: 15px;
     margin-top: 50px;
 }
 
-.imagens-familia{
+.imagens-familia {
     display: flex;
     gap: 10px;
     justify-content: center;
+    border-radius: 90px;
+    padding: 25px;
+    border: 1px;
+    border-color: #333333;
+
+    
+}
+
+
+.imagens-familia img {
     border-radius: 10px;
 }
 
-.bt-js{
+.bt-js {
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -52,9 +67,15 @@ li {
 
 }
 
-.decoracoes-bts{
-    background-color:#6CA0DC;
+.decoracoes-bts {
+    background-color: #6CA0DC;
     padding: 15px;
     border-radius: 15px;
+    cursor: pointer;
+    border: none;
 
+}
+
+.decoracoes-bts:hover{
+    background-color: #7fbbff;
 }
