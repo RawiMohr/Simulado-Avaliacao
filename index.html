@@ -46,10 +46,95 @@
         <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/488772759_3884676195078163_187794917624381947_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7094&_nc_ohc=3p8U3ImID-cQ7kNvwF7JWkl&_nc_oc=AdkNKQaK2NAi48eIp4GONko7BNX6GN--uU8RIzdqWied8G4XUumqRQudDxpO9wcT38M&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=rf7kNegq9-WOpnhC58D45g&oh=00_AfhIr_YUb8alnHBDX09gEDh4ms-7okr36AdOj-r3TjU3Vw&oe=692395DB"
             width="500px">
     </div>
-    <div class="bt-js">
-        <button class="bt-js">Botão especial</button>
+    <div class="cartao bt-js">
+        <p id = "frase-visivel">frase visivel</p>
+        <button  id = "botao-invisivel" class="decoracoes-bts">Botão que verifica se essa frase está visível ou não </button>
     </div>
+     <div class="cartao bt-js">
+         <p id = "mensagem-especial">Essa frase vai virar algo especial</p>
+         <button  id = "bt-msg" class="decoracoes-bts">Clique para a frase</button>
+     </div>
+      <div class="cartao bt-js">
+         <p id = "nome_familiares">Essa frase vai virar os nomes dos meu familiares<br></p>
+         <button  id = "bt_familiares" class="decoracoes-bts">Clique para transformar a frase</button>
+     </div>
+     <div class="cartao bt-js">
+         <p id = "frase_familiares">3 fatos legais sobre minha família<br></p>
+         <button  id = "bt_frasefamiliares" class="decoracoes-bts">Clique para transformar a frase</button>
+     </div>
 
+<script>
+    let frase_visivel = document.getElementById("frase-visivel")
+    let botao_invisivel  = document.getElementById("botao-invisivel")
+    botao_invisivel.addEventListener("click", function(){
+        if(frase_visivel.style.visibility === "hidden"){
+            frase_visivel.style.visibility = "visible"
+        } else{
+            frase_visivel.style.visibility = "hidden"
+        }
+               })
+    
+    let mensagem_especial = document.getElementById("mensagem-especial")
+    let bt_msg = document.getElementById("bt-msg")
+    
+    bt_msg.addEventListener("click", function(){
+        let familia = prompt("digite o familiar para receber a mensagem");
+        switch(familia){
+            case "mãe":
+                mensagem_especial.innerHTML=("Te amo mãe!!!!!!!")
+                break;
+            case "pai":
+                mensagem_especial.innerHTML=("Te amo pai!!!!!!")
+                break;
+            case "irmão":
+                mensagem_especial.innerHTML=("Te amo irmao!!!!!!!")
+                break;
+            default:
+                mensagem_especial.innerHTML=('tente digitar "mãe" ou "pai"')
+                break;
+        }
+    })
+
+    let nome_familiares = document.getElementById("nome_familiares")
+    let bt_familiares= document.getElementById("bt_familiares")
+    bt_familiares = bt_familiares.addEventListener("click", function(){
+        let membrosFamilia = ["Maristela", "Leoneu", "William", "Ranier"]
+        for(let i = 0; i<membrosFamilia.length; i++){
+            nome_familiares.innerHTML += membrosFamilia[i] +"<br>"
+        }
+    })
+
+    let frase_familiares = document.getElementById("frase_familiares")
+    let bt_frasefamiliares= document.getElementById("bt_frasefamiliares")
+    bt_frasefamiliares.addEventListener("click", function(){
+        let j=0
+        while(j<3){
+            frase_familiares.innerHTML+=("Eu amo minha familia <br>")
+            j++
+        }
+    })
+
+    let listaDeNomes = ["Rawi", "Maristela", "Leoneu", "william", "Ranier"]
+    let momentosEspeciai = [
+    "Aniversário de 10 anos",
+    "Viagem para a praia em 2023"];
+
+    let matriz = [
+        ["rawi", 15],
+        ["Maristela", 60,],
+        ["Leoneu", 65],
+        ["Wiliam", 35],
+        ["Ranier", 41]
+        ]
+        for(let i =0; i<matriz.length; i++){
+            for(let j =0; j<matriz[i].length; j++){
+                console.log(matriz[i][j])
+            }
+        }
+        let rawi = {
+            autor: true
+        }
+        
+</script>
 </body>
-
 </html>

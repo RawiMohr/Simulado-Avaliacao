@@ -1,5 +1,5 @@
 body {
-    background-color: #B0CFDD;
+    background-color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 40px;
     margin-right: 40px;
@@ -11,14 +11,17 @@ h1 {
     font-size: 50px;
     margin-bottom: 80px;
     margin-top: 80px;
+    color: #005A9C;
 }
 
 .titulo-familia {
     font-size: 30px;
+    color: #6CA0DC;
 }
 
 .texto-familia {
     font-size: 20px;
+    text-decoration: #333333;
 }
 
 li {
@@ -26,16 +29,18 @@ li {
 }
 
 .cartao {
-    background-color: white;
+    background-color: #F4F4F4;
     padding: 10px;
     margin-bottom: 50px;
     border-radius: 15px;
+    margin-top: 50px;
 }
 
 .imagens-familia{
     display: flex;
     gap: 10px;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .bt-js{
@@ -43,4 +48,13 @@ li {
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    gap: 15px;
+
+}
+
+.decoracoes-bts{
+    background-color:#6CA0DC;
+    padding: 15px;
+    border-radius: 15px;
+
 }
